@@ -23,7 +23,7 @@
   <nav class="indigo transparent">
     <div class="nav-wrapper">
     <div class="container">
-      <a class="brand-logo">Data Vault</a>
+      <a class="brand-logo">Data Vault Login</a>
     </div>
     </div>
   </nav>
@@ -35,16 +35,16 @@
         <div class="col s12 m6">
           <div class="card darken-2 z-depth-2">
               <div class="card-content blue darken-1 white-text">                
-                  <h4>Admin login</h4>
+                  <h4>Admin</h4>
               </div>
               <div class="card-action">
                   <form action="/adminLogin" method="POST">
                       <div class="input-field lighten-6">
-                        <input value="adminraghav" id="user" name="user" type="text">
+                        <input id="user" name="user" type="text">
                         <label for="user">Username</label>
                       </div>
                       <div class="input-field lighten-6">
-                        <input value="123" id="pass" name="pass" type="password" >
+                        <input id="pass" name="pass" type="password" >
                         <label for="pass">Password</label>
                       </div>
                       <button type="submit" class="btn waves-effect waves-light blue" >Login</button>
@@ -57,16 +57,16 @@
         <div class="col s12 m6">
             <div class="card darken-2 z-depth-2">
               <div class="card-content amber darken-2 white-text">                
-                  <h4>LVData Engineer login</h4>
+                  <h4>LVData Engineer</h4>
               </div>
               <div class="card-action">
                   <form action="/engLogin" method="POST">
                       <div class="input-field lighten-6">
-                          <input value="raghav" id="enuser" name="enuser" type="text">
+                          <input id="enuser" name="enuser" type="text">
                           <label for="enuser">Username</label>
                           </div>
                           <div class="input-field lighten-6">
-                          <input value="123" id="enpass" name="enpass" type="password">
+                          <input id="enpass" name="enpass" type="password">
                           <label for="enpass">Password</label>
                           </div>
                       <button type="submit" class="btn waves-effect waves-light amber darken-2" >Login</button>
