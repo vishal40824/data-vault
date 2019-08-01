@@ -1,0 +1,38 @@
+<br>
+<div class="z-depth-3">
+<br>    
+<h5 class="white-text center">Catalog List</h5>
+
+<div class="row" ng-init="dispCat()">
+    <div class="col s12 m6" ng-repeat="c in catalogData">
+        
+        <div class="card grey darken-1" style="cursor: pointer;" ng-click="catname(c.catalogname)" id="addBtn">
+        <div class="card-content white-text">
+        
+            <a class="card-title center white-text" >{{c.catalogname}}</a>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="col s12 m6" ng-if="userLogged[0].admin">
+
+        <div class="card grey lighten-4" id="addBtn">
+        <div class="card-content">
+            <div ng-show="add" class="formDispl">
+                <form>
+                    <div class="input-field">
+                        <input style="color: black;" type="text" id="cat" name="cat" class="validate" ng-model="cat">{{cat}}
+                        <label for="cat">New Software Catalog</label>
+                    </div>
+                    <button type="submit" class="btn waves-effect waves-light grey darken-1" ng-click="catalog(cat)">Insert</button>
+                </form>
+            </div>
+            <br>
+            <span class="card-title center" style="cursor: pointer;" ng-click="addcat()" ><a class="material-icons" style="color: rgba(0,0,0,0.5); font-size:50px;">{{logo}}</a></span>
+        </div>
+        </div>
+
+    </div>
+</div>
+</div>
